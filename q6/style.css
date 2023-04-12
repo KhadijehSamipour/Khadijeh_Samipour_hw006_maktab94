@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+.container {
+  width: 50%;
+  height: 1290px;
+  display: flex;
+  flex-direction: column;
+  background-color: #add8e6;
+}
+
+.header {
+  width: 90%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 3px solid white;
+  padding: 3rem;
+  margin-left: 2rem;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+}
+
+#name {
+  width: 100%;
+  height: 3.25rem;
+  padding: 0.75rem;
+  margin-top: 0.25rem;
+  border: none;
+  font-size: 14px;
+}
+
+.fml {
+  margin-bottom: 1.25rem;
+}
+
+.course {
+  margin-left: 2rem;
+}
+
+#course {
+  border: none;
+  padding: 0.25rem;
+}
+
+.gender {
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+
+#radio {
+  margin: 0.25rem;
+}
+
+.phone {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+}
+
+#phone {
+  width: 100%;
+  height: 3.25rem;
+  padding: 0.75rem;
+  margin-top: 0.25rem;
+  border: none;
+}
+
+.adderss {
+  margin-left: 2rem;
+}
+
+#adderss {
+  /* width: 100%; */
+  padding: 0.75rem;
+  margin-top: 0.25rem;
+  border: none;
+}
+
+.emailpass {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+}
+
+#emailpass {
+  width: 100%;
+  height: 3.25rem;
+  padding: 0.75rem;
+  margin-top: 0.25rem;
+  border: none;
+}
+button {
+  width: 90%;
+  background-color: #56b35f;
+  color: white;
+  margin-bottom: 2.5rem;
+  margin-left: 2rem;
+  border: none;
+  padding: 1rem;
+  font-size: 15px;
+}
+
+#phone,
+#address,
+#emailpass {
+  font-size: 14px;
+}
+
+.errorMessage {
+  background-color: white;
+  width: 143px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-left: 107px;
+  visibility: hidden;
+  border-radius: 10px;
+  position: relative;
+  float: left;
+}
+
+/* .errorMessage hidden {
+  background-color: white;
+  width: 143px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-left: 107px;
+  visibility: hidden;
+  border-radius: 10px;
+  position: relative;
+  float: left;
+} */
+.errorMessage.top-arrow:after {
+  content: " ";
+  position: absolute;
+  right: 90px;
+  top: -15px;
+  border-top: none;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-bottom: 15px solid white;
+}
+
+.hidden {
+  display: none;
+}
+
+.validation {
+  width: 100%;
+  height: 3.25rem;
+  padding: 0.75rem;
+  margin-top: 0.25rem;
+  border: none;
+  color: red;
+}

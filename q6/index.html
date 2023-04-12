@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header"><h1>Student Registeration Form</h1></div>
+      <div class="main">
+        <div class="name">
+          <div class="firstname fml">
+            <label for="firstname">Firstname:</label><br />
+            <input
+              class="name_1"
+              id="name"
+              type="text"
+              placeholder="Firstname"
+            />
+            <label id="validation_1" class="validation hidden" for="firstname"
+              >*Please Fill out this field</label
+            >
+          </div>
+          <div class="middlename fml">
+            <label for="middlename">Middlename:</label><br />
+            <input
+              class="name_2"
+              id="name"
+              type="text"
+              placeholder="Middlename"
+            />
+            <label id="validation_2" class="validation hidden" for="firstname"
+              >*Please Fill out this field</label
+            >
+          </div>
+          <div class="lastname fml">
+            <label for="lastname">Lastname:</label><br />
+            <input
+              class="name_3"
+              id="name"
+              type="text"
+              placeholder="Lastname"
+            />
+            <label id="validation_3" class="validation hidden" for="firstname"
+              >*Please Fill out this field</label
+            >
+          </div>
+        </div>
+        <div class="course">
+          <label for="course">Course:</label>
+          <select name="course" id="course">
+            <option value="course">Course</option>
+          </select>
+        </div>
+        <div class="gender">
+          <label for="gender">Gender:</label><br />
+          <input type="radio" id="radio" name="male" value="male" checked />
+          <label for="male">Male</label>
+          <input type="radio" id="radio" name="female" value="female" />
+          <label for="female">Female</label>
+          <input type="radio" id="radio" name="other" value="other" />
+          <label for="other">Other</label>
+        </div>
+        <div class="phone">
+          <label for="phone">Phone:</label>
+          <input id="phone" type="text" name="phone" value="+91" /><br />
+          <input id="phone" type="text" name="phone" value="phone no." />
+        </div>
+        <div class="adderss">
+          <label for="adderss">Current Address:</label><br />
+          <textarea id="adderss" name="adderss" rows="6" cols="90">
+Current Address
+          </textarea>
+        </div>
+        <div class="emailpass">
+          <div class="email fml">
+            <label for="email"><strong>Email</strong></label
+            ><br />
+            <input id="emailpass" type="text" placeholder="Enter Email" />
+          </div>
+          <div class="password fml">
+            <label for="password"><strong>Password</strong></label
+            ><br />
+            <input id="emailpass" type="text" placeholder="Enter Password" />
+          </div>
+          <div class="retype fml">
+            <label for="retype"><strong>Re-type Password</strong></label
+            ><br />
+            <input id="emailpass" type="text" placeholder="Retype Password" />
+          </div>
+        </div>
+      </div>
+      <div class="btn">
+        <button class="btn" type="submit" click="return validation()">
+          Register
+        </button>
+      </div>
+    </div>
+    <script src="./assets/script.js"></script>
+  </body>
+</html>
